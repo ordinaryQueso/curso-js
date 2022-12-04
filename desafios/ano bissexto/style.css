@@ -1,0 +1,28 @@
+body {
+    background: rgb(2, 29, 29);
+    font: normal 15pt arial;
+}
+section {
+    background: white;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.445);;
+}
+
+input.numero {
+    width: 60px;
+}
+
+input#botão {
+    width: 100px;
+    height: 40px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

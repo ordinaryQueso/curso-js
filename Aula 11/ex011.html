@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Que país você vive? </h1>
+    Digite o país: <input type="text" id="nome">
+    <input type="button" value="OK" onclick="país()">
+    <div id="res">
+
+    </div>
+    <script>
+        function país() {
+            var n = window.document.getElementById('nome')
+            var nome = n.value.toLowerCase()
+            var res = window.document.getElementById('res')
+            if (nome == 'brasil') {
+                res.innerHTML = 'Você é Brasileiro'
+            } else {
+                res.innerHTML = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

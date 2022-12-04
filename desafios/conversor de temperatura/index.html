@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Converter Temperatura</h1>
+        <div>
+            <input type="number" name="" class="numero" id="v1">
+            <select name="tv1" id="tv1" size="1" >
+                <option value="celcius" selected>°C</option>
+                <option value="kelvin">°K</option>
+                <option value="fahrenheit">°F</option>
+            </select>
+            para
+            <input type="number" name="" id="v2" class="numero">
+            <select name="tv2"  id="tv2" size="1">
+                <option value="celcius" >°C</option>
+                <option value="kelvin" selected>°K</option>
+                <option value="fahrenheit">°F</option>
+            </select>
+            <p>
+                <input type="button" value="Converter" id="botão" onclick="converter()">
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Eduardo DEV</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

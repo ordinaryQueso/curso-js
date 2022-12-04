@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("Qual o seu nome? ")
+        var idade = window.prompt("Qual a sua idade? ")
+        var nota1 = Number(window.prompt("Nota numero 1? "))
+        var nota2 = Number(window.prompt("Nota numero 2? "))
+
+        var media = (nota1 + nota2) / 2
+        var resultado = media >= 7 ? 'APROVADO' : media >= 5 ? "DE RECUPERAÇÃO" : "REPROVADO"
+
+        document.write(`O aluno ${nome}, de ${idade} anos, teve média de ${media.toFixed(2)} e esta ${resultado}`)
+    </script>
+</body>
+</html>

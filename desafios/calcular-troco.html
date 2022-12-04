@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular troco</title>
+    <style>
+        body {
+            font: normal 18pt arial ;
+        }
+        input {
+            padding: 15px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <input type="button" value="Comprar Produto" onclick="calcular()">
+    <script>
+        function calcular() {
+            var produto = window.prompt('Que produto você esta comprando?')
+            var preco = Number(window.prompt(`Quanto custa ${produto} que você esta comprando?`))
+            var pagamento = Number(window.prompt(`Qual foi o valor que você deu para pagar ${produto}`))
+            if (pagamento >= preco) {
+                var troco = pagamento - preco
+                window.alert(`Você comprou ${produto} que custou ${preco.toLocaleString('pt-br',{style:'currency',currency:'brl'})}, deu ${pagamento.toLocaleString('pt-br',{style:'currency',currency:'brl'})} e vai receber ${troco.toLocaleString('pt-br',{style:'currency',currency:'brl'})} de troco. Volte sempre! `)
+            } else {
+                var diferenca = preco - pagamento
+                window.alert(`Sinto muito, o dinheiro para o pagamento é inferior ao preço, favor pagar a diferença de ${diferenca.toLocaleString('pt-br',{style:'currency',currency:'brl'})}`)
+            }
+        }
+    </script>
+</body>
+</html>

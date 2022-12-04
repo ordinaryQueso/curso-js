@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade para Votação</title>
+    <style>
+        body {
+            font: normal 15pt arial ;
+        }
+        input#idade {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você pode votar?</h1>
+    Insira sua idade: <input type="number" name="idade" id="idade">
+    <input type="button" value="OK" onclick="pvotar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function pvotar(){
+            var i = window.document.getElementById('idade')
+            var idade = Number(i.value)
+            var res = window.document.getElementById('res')
+            if (idade < 16) {
+                res.innerHTML = 'Não vota'
+            } else if (idade < 18 || idade > 65) {
+                res.innerHTML = 'Voto opcional'
+            } else {
+                res.innerHTML = 'Voto obrigatório'
+            }
+        }
+    </script>
+</body>
+</html>

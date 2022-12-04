@@ -1,0 +1,54 @@
+body {
+    background: rgb(2, 29, 29);
+    font: normal 15pt arial;
+}
+section {
+    background: white;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.445);;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    background-color: rgb(2, 29, 29);
+    color: white;
+    display: block;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.445);;
+    padding: 5px;
+    margin: auto;
+}
+a:hover {
+    text-decoration: none;
+    background-color: #692700;
+    color: rgb(2, 29, 29);
+    display: block;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.445);;
+    padding: 5px;
+    margin: auto;
+}
+
+div#formulario, div#res {
+    text-align: justify;
+}
+input#botao {
+    width: 150px;
+    height: 50px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
